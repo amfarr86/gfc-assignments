@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+	<head>
+		<title>Contact Us</title>
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+		<style>
+			.formElements{
+				padding:15px 80px 10px 300px;
+			}
+			form{
+				background-color:#ce670b;
+			}
+			label{
+				font-weight:bold;
+				padding:12px 12px;
+				vertical-align:top;
+			}
+			input{
+				border:1px solid #006600;
+			}
+			select{
+				border:1px solid #006600;
+			}
+			textarea{
+				border:1px solid #006600;
+				box-sizing:border-box;
+				width:35%;
+				height:100px;
+			}
+			submit{
+				border:1px solid #006600;
+			}
+			.submitButton{
+				text-align:center;
+				padding-bottom:35px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Wild Onions</h1>
+		<hr/><br/>
+		<div id="navigation">
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="contactUs.html">Contact Us</a>
+		<br/></div>
+		<hr/>
+		<form action="submit.html" method="POST"><br/><br/>
+			<div class="formElements">
+				<label for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="firstname lastname" required><br/><br/>
+				<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="name@example.com" required><br/><br/>
+				<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" placeholder="222-222-2222" required><br/><br/>
+				<label for="reasonForInquiry">Reason for Inquiry:</label>
+					<select id="reasonForInquiry" name="reasonForInquiry">
+						<option value="default" selected>Catering</option>
+						<option value="privateParty">Private Party</option>
+						<option value="feedback">Feedback</option>
+						<option value="other">Other</option>
+					</select>
+				<br/><br/>
+				<label for="additionalInformation">Additional Information:</label>
+					<textarea id="additionalInformation" placeholder="Enter additional info that will help us understand your inquiry..."required></textarea><br/><br/>
+
+					<label for="returningGuest">Have you been to the restaurant?</label>
+						<input type="radio" id="choice1" name="returningGuest" value="no" checked="checked">
+							<label for="choice1">No</label>
+						<input type="radio" id="choice2" name="returningGuest" value="yes">
+							<label for="choice2">Yes</label>
+				<br/><br/>
+					<label for="dayToContact">Best days to contact you:</label>
+						<input type="checkbox" id="monday" name="dayToContact" value="monday">
+							<label for="monday">M</label>
+						<input type="checkbox" id="tuesday" name="dayToContact" value="tuesday">
+							<label for="tuesday">T</label>
+						<input type="checkbox" id="wednesday" name="dayToContact" value="wednesday">
+							<label for="wednesday">W</label>
+						<input type="checkbox" id="thursday" name="dayToContact" value="thursday">
+							<label for="thursday">Th</label>
+						<input type="checkbox" id="friday" name="dayToContact" value="friday">
+							<label for="friday">F</label>
+			</div>
+			<br/><br/>
+			<div class="submitButton">
+				<input type="submit" name="submit" value="Send Request">
+			</div>
+		</form>
+			<hr/>
+				<footer>
+					<p>147 Watou Lane, Indianapolis, Indiana 46280</p>
+					<p>462-715-8844</p>
+				</footer>
+			<hr/>
+			</div>
+	</body>
+</html>
