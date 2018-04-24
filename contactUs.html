@@ -1,97 +1,123 @@
 <!DOCTYPE html>
+<html>
 	<head>
 		<title>Contact Us</title>
 		<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<style>
-			.formElements{
-				padding:15px 80px 10px 300px;
-			}
 			form{
 				background-color:#ce670b;
-			}
-			label{
-				font-weight:bold;
-				padding:12px 12px;
-				vertical-align:top;
-			}
-			input{
-				border:1px solid #006600;
-			}
-			select{
-				border:1px solid #006600;
-			}
-			textarea{
-				border:1px solid #006600;
-				box-sizing:border-box;
-				width:35%;
-				height:100px;
-			}
-			submit{
-				border:1px solid #006600;
+				padding:40px 0px;
 			}
 			.submitButton{
 				text-align:center;
-				padding-bottom:35px;
+			}
+			.form-check-label{
+				font-weight: normal;
 			}
 		</style>
 	</head>
 	<body>
-		<h1>Wild Onions</h1>
-		<hr/><br/>
-		<div id="navigation">
-			<a href="index.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="contactUs.html">Contact Us</a>
-		<br/></div>
-		<hr/>
-		<form action="submit.html" method="POST"><br/><br/>
-			<div class="formElements">
-				<label for="name">Name:</label>
-					<input type="text" id="name" name="name" placeholder="firstname lastname" required><br/><br/>
-				<label for="email">Email:</label>
-					<input type="email" id="email" name="email" placeholder="name@example.com" required><br/><br/>
-				<label for="phone">Phone:</label>
-					<input type="tel" id="phone" name="phone" placeholder="222-222-2222" required><br/><br/>
-				<label for="reasonForInquiry">Reason for Inquiry:</label>
+		<div class="container">
+			<div class="header">
+				<div class="row">
+					<div class="col-md-12">
+					<h1 class="text-success">Wild Onions</h1>
+					<hr/>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="menu.html">Menu
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="menu.html">Menu</a></li>
+								<li><a href="beverages.html">Beverages</a></li>
+							</ul>
+						</li>
+						<li><a href="contactUs.html">Contact Us</a></li>
+					</ul>
+					<hr/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+		<form class="form-horizontal" action="submit.html" method="POST">
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="name">Name:</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="name" required>
+				</div>
+			</div>		
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="email">Email:</label>
+				<div class="col-sm-6">
+					<input type="email" class="form-control" id="email" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="phone">Phone:</label>
+				<div class="col-sm-6">
+					<input type="tel" class="form-control" id="phone" placeholder="xxx-xxx-xxxx" required>
+				</div>
+			</div>	
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="reasonForInquiry">Reason for Inquiry:</label>
+				<div class="col-sm-6">
 					<select id="reasonForInquiry" name="reasonForInquiry">
 						<option value="default" selected>Catering</option>
 						<option value="privateParty">Private Party</option>
 						<option value="feedback">Feedback</option>
 						<option value="other">Other</option>
 					</select>
-				<br/><br/>
-				<label for="additionalInformation">Additional Information:</label>
-					<textarea id="additionalInformation" placeholder="Enter additional info that will help us understand your inquiry..."required></textarea><br/><br/>
-
-					<label for="returningGuest">Have you been to the restaurant?</label>
-						<input type="radio" id="choice1" name="returningGuest" value="no" checked="checked">
-							<label for="choice1">No</label>
-						<input type="radio" id="choice2" name="returningGuest" value="yes">
-							<label for="choice2">Yes</label>
-				<br/><br/>
-					<label for="dayToContact">Best days to contact you:</label>
-						<input type="checkbox" id="monday" name="dayToContact" value="monday">
-							<label for="monday">M</label>
-						<input type="checkbox" id="tuesday" name="dayToContact" value="tuesday">
-							<label for="tuesday">T</label>
-						<input type="checkbox" id="wednesday" name="dayToContact" value="wednesday">
-							<label for="wednesday">W</label>
-						<input type="checkbox" id="thursday" name="dayToContact" value="thursday">
-							<label for="thursday">Th</label>
-						<input type="checkbox" id="friday" name="dayToContact" value="friday">
-							<label for="friday">F</label>
+				</div>
+			</div>			
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="additionalInformation">Additional Information:</label>
+				<div class="col-sm-6">
+					<textarea class="form-control" rows="5" id="additionalInformation"></textarea>
+				</div>
 			</div>
-			<br/><br/>
+			<div class="form-group">
+				<label class="control-label col-sm-4" for="returningGuest">Have you been to the restaurant?</label>
+				<div class="form-check form-check-inline col-sm-1">
+					<input class="form-check-input" type="radio" id="choice1" name="returningGuest" value="no" checked="checked">
+						<label class="form-check-label" for="choice1">No</label>
+				</div>
+				<div class="form-check form-check-inline col-sm-1">
+					<input class="form-check-input" type="radio" id="choice2" name="returningGuest" value="yes">
+						<label class="form-check-label" for="choice2">Yes</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="dayToContact">Best days to contact you:</label>
+				<div class="col-sm-9">
+					<label class="checkbox-inline" for="monday">M &nbsp;</label>
+						<input type="checkbox" id="monday" name="dayToContact" value="monday">
+					<label class="checkbox-inline" for="tuesday">T &nbsp;</label>
+						<input type="checkbox" id="tuesday" name="dayToContact" value="tuesday">
+					<label class="checkbox-inline" for="wednesday">W &nbsp;</label>
+						<input type="checkbox" id="wednesday" name="dayToContact" value="wednesday">
+					<label class="checkbox-inline" for="thursday">Th &nbsp;</label>
+						<input type="checkbox" id="thursday" name="dayToContact" value="thursday">
+					<label class="checkbox-inline" for="friday">F</label>
+						<input type="checkbox" id="friday" name="dayToContact" value="friday">	
+				</div>
+			</div>
 			<div class="submitButton">
 				<input type="submit" name="submit" value="Send Request">
 			</div>
 		</form>
+		</div>
+		<div class="container">
 			<hr/>
 				<footer>
 					<p>147 Watou Lane, Indianapolis, Indiana 46280</p>
 					<p>462-715-8844</p>
 				</footer>
 			<hr/>
-			</div>
+		</div>
 	</body>
 </html>
