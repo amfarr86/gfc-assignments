@@ -2,45 +2,118 @@
 	<head>
 		<title>Wild Onions</title>
 		<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<noscript>You do not have JavaScript enabled. This site is best viewed with JavaScript enabled.
+		</noscript>
 		<style>
-			#main{
+			.bgColor{
 			background-color:#ce670b;
 			}
 		</style>
 	</head>
 	<body>
-		<h1>Wild Onions</h1>
-		<hr/><br/>
-		<div id="navigation">
-			<a href="index.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="contactUs.html">Contact Us</a>
-		<br/></div>
-		<hr/>
-		<div id="main"><br/><br/>
-			<div class="image" align="center"> <img src="images/restaurant.jpg" alt="Photo of Wild Onions Kitchen" height="250" width="500" border="1px solid #006600"></div>
-			<div class="description">
-				<div class="content">
-					<p>
-					Wild Onions is a farm-to-table kitchen offering a refined, yet casual, menu.
-					We strive to bring you the best sensory experience possible by presenting you
-					with beautifully crafted dishes and drinks, including house-made tonics, local
-					craft beer, and thoughtfully prepared cocktails. Our menu changes with the seasons
-					and based on availability. A complete list of local produce and protein providers for 
-					the day's menu can be found on our "Local Farms" chalkboard above our bar area. Wild 
-					Onions is situated in a rural setting, off a dirt road, and offers an intimate dining
-					room, bar area, and patio seating, with each option complete with stunning views of the 
-					lush scenery. For catering inquiries, private party information, or for any questions, 
-					please follow the "Contact Us" link at the top of this page.
-					</p><br/><br/>
+		<div class="container">
+			<div class="header">
+				<div class="row">
+					<div class="col-md-12">
+					<h1 class="text-success">Wild Onions</h1>
+					<hr/>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="menu.html">Menu
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="menu.html">Menu</a></li>
+								<li><a href="beverages.html">Beverages</a></li>
+							</ul>
+						</li>
+						<li><a href="contactUs.html">Contact Us</a></li>
+					</ul>
+					<hr/>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="container">
+			<div class="page-header">
+				<h1>New location coming soon!</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+						  <div class="carousel-inner">
+							<div class="item active">				
+							<p>We are thrilled to announce the impending opening of our second location. 
+							Look for us in Cincinnati's OTR in June!</p>
+							<img src="images/otr2.jpg" alt="Over-the-Rhine"/>
+							<div class="small image-caption">
+								<p><a href="https://flic.kr/p/9TPCBe">Photo by Chuck Eilerman,</a>available by
+								<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+							</div>
+							</div>
+							<div class="item">
+							<p>We're rolling out our seasonal menu, with special options for this season</p>
+							  <img src="images/seasonalMenu2.jpg" alt="Seasonal food"/>
+							</div>
+							<div class="item">
+							<p>The Drink of the Month is SG Special Brew</P>
+							  <img src="images/hops2.jpg" alt="Hops"/>
+							</div>
+						  </div>
+						  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="main bgColor"><br/><br/>
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-10"><br/><br/>
+					<div class="image" align="center"> 
+					<img class="img-responsive" src="images/restaurant.jpg" class="border" alt="Photo of Wild Onions Kitchen" 
+					height="450" width="800" border="1px solid #006600"></div><br/><br/>
+						<p class="lead text-justify">
+						Wild Onions is a farm-to-table kitchen offering a refined, yet casual, menu.
+						We strive to bring you the best sensory experience possible by presenting you
+						with beautifully crafted dishes and drinks, including house-made tonics, local
+						craft beer, and thoughtfully prepared cocktails. Our menu changes with the seasons
+						and based on availability. A complete list of local produce and protein providers for 
+						the day's menu can be found on our "Local Farms" chalkboard above our bar area. Wild 
+						Onions is situated in a rural setting, off a dirt road, and offers an intimate dining
+						room, bar area, and patio seating, with each option complete with stunning views of the 
+						lush scenery. For catering inquiries, private party information, or for any questions, 
+						please follow the "Contact Us" link at the top of this page.
+						</p><br/><br/>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
 		<hr/>
 			<footer>
 				<p>147 Watou Lane, Indianapolis, Indiana 46280</p>
 				<p>462-715-8844</p>
 			</footer>
 		<hr/>
+		</div>
 	</body>
 </html>

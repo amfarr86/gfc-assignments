@@ -2,133 +2,145 @@
 	<head>
 		<title>Menu</title>
 		<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<style>
-			th{
-				font-weight:bold;
-				font-size:110%;
+			h4{
 				color:#006600;
 			}
 			.menuMain{
 				background-color:#ce670b;
-				color:black;
-				text-align:center;
-				padding: 5px 80px;
-			}
-			.menuBev{
-				width:100%;
-				border-collapse:collapse;
-			}
-			.menuBev tr{
-				height:40px;
-			}
-			.menuBev td{
-				width:30px;
-			}
-			.menuBev tr:nth-child(even){
-				background-color:#c9e3c6;
-			}
-			.menuBev th{
-				text-align:left;
-				text-decoration:underline;
+				padding:20px 20px 100px 20px;
 			}
 		</style>
 	</head>
 	<body>
-		<header>
-		<h1>Wild Onions</h1>
-		<hr/><br/>
-		<div id="navigation">
-			<a href="index.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="contactUs.html">Contact Us</a>
-		<br/></div>
-		<hr/>
-		<div class="menuMain">
-		<div class="content">
-			<br/><br/>
-			<table>
-				<tr>
-					<th>Pho Ga</th>
-					<th>Nashville Chicken</th>
-					<th>Proscuitto and Arugula Pizza</th>
-				</tr>
-				<tr>
-					<td>Chicken broth infused with aromatics with shredded chicken, white onion, and rice noodles. 
-					Served with bean sprouts, culantro, lime wedges, jalapeno, thai basil, and soy sauce and chili oil.</td>
-					<td>Panko-crusted fried chicken cutlet covered in hot sauce served on a pretzel knot with romaine, pickles, ranch.</td>
-					<td>Thin-crust, wood-fired oven-baked pie with marinara sauce and finished with a basil pesto drizzle and parmesan shavings, arugula after the bake.</td>
-				</tr>
-				<tr>
-					<td>Accompanied by a fresh tofu spring wrap served with soy peanut dipping sauce.</td>
-					<td>Accompanied by coleslaw and fresh-cut frites served with garlic aoli.</td>
-					<td>Accompanied by a garlic butter breadstick.</td>
-				</tr>
-				<tr>
-					<td>$12-</td>
-					<td>$15-</td>
-					<td>$12-</td>
-				</tr>
-					<tr class="blank_row">
-					<td colspan="3"></td>
-				</tr>
-					<tr class="blank_row">
-					<td colspan="3"></td>
-				</tr>
-					<tr class="blank_row">
-					<td colspan="3"></td>
-				</tr>
-				<tr class="blank_row">
-				<td colspan="3"></td>
-				</tr>
-				<tr>
-					<th>Mushroom-stuffed Rainbow Trout</th>
-					<th>Chicken Waterzooi</th>
-					<th>Spaghetti Pomodoro</th>
-				</tr>
-				<tr>
-					<td>Fresh-caught grilled whole trout stuffed with mixture of breadcrumbs and wild mushrooms.</td>
-					<td>Belgian delicacy of creamy chicken stew with vegetables, topped with parsley.</td>
-					<td>Freshly made spaghetti covered in heirloom tomatoes, parmesan, olive oil, fresh garlic, and basil.</td>
-				</tr>
-				<tr>
-					<td>Accompanied by grilled asparagus and roasted, truffled fingerling potatoes.</td>
-					<td>Accompanied by a warm baguette.</td>
-					<td>Accompanied by heirloom caprese salad.</td>
-				</tr>
-				<tr>
-					<td>$20-</td>
-					<td>$12-</td>
-					<td>$15-</td>
-				</tr>
-			</table><br/><br/>
+		<div class="container">
+			<div class="header">
+				<div class="row">
+					<div class="col-sm-12">
+					<h1 class="text-success">Wild Onions</h1>
+					<hr/>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="menu.html">Menu
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="menu.html">Menu</a></li>
+								<li><a href="beverages.html">Beverages</a></li>
+							</ul>
+						</li>
+						<li><a href="contactUs.html">Contact Us</a></li>
+					</ul>
+					<hr/>
+					</div>
+				</div>
+			</div>
 		</div>
+		<div class="container menuMain text-center">
+			<div class="row">
+				<div class="col-sm-4">
+						<div class="row">
+							<div class="col"><h4>Pho Ga</h4></div>
+						</div>
+						<div class="row">
+							<div class="col">Aromatic chicken broth, shredded chicken, white onion, 
+							and rice noodles, with bean sprouts, culantro, lime, jalapeno, thai basil.</div>
+						</div>
+						<div class="row">
+							<div class="col">Accompanied by a tofu spring wrap with soy peanut dipping sauce.</div>
+						</div>
+						<div class="row">
+							<div class="col">$12-</div><br/>
+						</div>
+				</div>
+				<div class="col-sm-4">
+						<div class="row">
+							<div class="col"><h4>Nashville Chicken</h4></div>
+						</div>
+						<div class="row">
+							<div class="col">Panko-crusted fried chicken cutlet covered in hot sauce 
+							served on a pretzel knot with romaine, pickles, ranch.</div>
+						</div>
+						<div class="row">
+							<div class="col">Accompanied by coleslaw and fresh-cut frites served with garlic aoli.</div>
+						</div>
+						<div class="row">
+							<div class="col">$15-</div>
+						</div>
+				</div>
+				<div class="col-sm-4">
+						<div class="row">
+							<div class="col"><h4>Proscuitto and Arugula Pizza</h4></div>
+						</div>
+						<div class="row">
+							<div class="col">Thin-crust, wood-fired oven-baked pie with marinara sauce and 
+							finished with a basil pesto drizzle and parmesan shavings, arugula after the bake.</div>
+						</div>
+						<div class="row">
+							<div class="col">Accompanied by a garlic butter breadstick.</div>
+						</div>
+						<div class="row">
+							<div class="col">$12-</div>
+						</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+						<div class="row">
+							<div class="col"><h4>Rainbow Trout</h4></div>
+						</div>
+						<div class="row">
+							<div class="col">Fresh-caught grilled whole trout stuffed with mixture of 
+							breadcrumbs and	wild mushrooms.</div>
+						</div>
+						<div class="row">
+							<div class="col">Accompanied by grilled asparagus and roasted potatoes.</div>
+						</div>
+						<div class="row">
+							<div class="col">$20-</div>
+						</div>
+				</div>
+				<div class="col-sm-4">
+						<div class="row">
+							<div class="col"><h4>Chicken Waterzooi</h4></div>
+						</div>
+						<div class="row">
+							<div class="col">Belgian delicacy of creamy chicken stew with vegetables, topped with parsley.</div>
+						</div>
+						<div class="row">
+							<div class="col">Accompanied by a warm baguette with housemade truffle oil.</div>
+						</div>
+						<div class="row">
+							<div class="col">$12-</div>
+						</div>
+				</div>
+				<div class="col-sm-4">
+						<div class="row">
+							<div class="col"><h4>Spaghetti Pomodoro</h4></div>
+						</div>
+						<div class="row">
+							<div class="col">Freshly made spaghetti covered in heirloom tomatoes, parmesan, olive oil, 
+							fresh garlic, and basil.</div>
+						</div>
+						<div class="row">
+							<div class="col">Accompanied by heirloom caprese salad.</div>
+						</div>
+						<div class="row">
+							<div class="col">$15-</div>
+						</div>
+				</div>
+			</div>
 		</div>
-		<table class="menuBev">
-			<tr>
-				<th colspan="2">Beverages</th>
-			</tr>
-			<tr>
-				<td>Basil Lemonade</td>
-				<td>$4-</td>
-			</tr>
-			<tr>
-				<td>Iced Green Tea</td>
-				<td>$4-</td>
-			</tr>
-			<tr>
-				<td>Cucumber Mint Sparkling Water</td>
-				<td>$3-</td>
-			</tr>
-			<tr>
-				<td>Soda</td>
-				<td>$3-</td>
-			</tr>						
-		</table>
+		<div class="container">
 		<hr/>
 			<footer>
 				<p>147 Watou Lane, Indianapolis, Indiana 46280</p>
 				<p>462-715-8844</p>
 			</footer>
 		<hr/>
+		</div>
 	</body>
 </html>
